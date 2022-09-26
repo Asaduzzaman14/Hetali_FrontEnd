@@ -1,22 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import image from '../assates/hetali logo_final_29.7 1.png'
-
+import '../Custom.css'
 
 const Navbar = () => {
 
     const menuItem = <>
-        <li><Link className='rounded-lg text-xl' to='/home'>Home</Link></li>
-        <li><Link className='rounded-lg text-xl' to='/add_product'>Add Product</Link></li>
-        <li><Link className='rounded-lg text-xl' to='/manage_products'>Manage Products</Link></li>
-        <li><Link className='rounded-lg text-xl' to='/about'>About</Link></li>
-        <li><Link className='rounded-lg text-xl' to='/profile'>Profile</Link></li>
+        <li><Link className='navunder rounded-lg text-xl  ' to='/home'>ABOUT US</Link></li>
+        <li><Link className='navunder rounded-lg text-xl' to='/about'>PROJECTS</Link></li>
+        <li><Link className='navunder rounded-lg text-xl' to='/profile'>DIVERSIFICATION</Link></li>
+        <li><Link className='navunder rounded-lg text-xl' to='/profile'>OUR PROCESS</Link></li>
+        <li><Link className='navunder rounded-lg text-xl' to='/profile'>TESTIMONIALS</Link></li>
+        <li><Link className='navunder rounded-lg text-xl' to='/profile'>CAREERS</Link></li>
+        <li><Link className='navunder rounded-lg text-xl' to='/profile'>CONTACT US</Link></li>
 
     </>
 
 
     return (
-        <div className="navbar  z-10 bg/[#fff] shadow-xl">
+        <div className="navbar  shadow-xl">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex="0" className="btn btn-ghost lg:hidden text-white">

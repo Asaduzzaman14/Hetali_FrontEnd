@@ -1,0 +1,39 @@
+.iconContainer {
+    position: relative;
+}
+
+.before::before {
+    content: '';
+    width: 100px;
+    height: 5px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(83, 202, 245, 0.8) 0%, rgba(217, 217, 217, 0) 100%);
+    position: absolute;
+    left: 40%;
+
+}
+
+
+.after::after {
+    content: '';
+    width: 100px;
+    height: 5px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(83, 202, 245, 0.8) 0%, rgba(217, 217, 217, 0) 100%);
+    position: absolute;
+    right: 40%;
+}
+
+.navunder::after {
+    content: '';
+    width: 40px;
+    height: 3px;
+    background: linear-gradient(90deg, #0F497E 0%, #53CAF5 109.3%);
+    position: absolute;
+    left: 10%;
+    bottom: 1px;
+    transition: width 1s;
+}
+
+.navunder:hover::after {
+    width: 80%;
+
+}

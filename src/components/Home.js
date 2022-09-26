@@ -10,7 +10,7 @@ import Vision from './Vision';
 
 const Home = () => {
     return (
-        <div className='w-[1200px] mx-auto'>
+        <div className='w-[1200px] mx-auto px-6'>
             <Banner />
             <Services />
             <Vision />
